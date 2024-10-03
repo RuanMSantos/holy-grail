@@ -1,0 +1,36 @@
+body {
+    max-width: 2920px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+.hg-conteudo {
+    background-color: #ccc;
+}
+
+.hg-conteudo > main {
+    background-color: #aaa;
+    flex: 1;
+}
+
+.hg-conteudo {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+.hg-conteudo > nav {
+    order: -1;
+}
+
+@media (min-width: 768px){
+    .hg-conteudo {
+        flex-flow: row;
+    }
+
+    .hg-conteudo > nav, aside {
+        flex: 0 0 200px;
+    }
+}
